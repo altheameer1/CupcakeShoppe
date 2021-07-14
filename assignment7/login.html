@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="heading">
+
+      <ul id="nav">
+        <li id="title">Althea's Cupcake Shoppe</li>
+        <li class="link" id="first"><a href="index.html">Home</a></li>
+        <li class="link" id="second"><a href="login.html">Log In</a></li>
+        <li class="link" id="second"><a href="products.php">Our Products</a></li>
+        <li class="link" id="second"><a href="search.html">Search</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <h2 class="pad">Enter your information to log in or register with us!</h2>
+
+      <form action="login.php" method="post">
+        <p>Username:</p>
+        <input type="text" name="user" id="user">
+
+        <p>Password:</p>
+        <input type="password" name="pass" id="pass">
+
+        <br>
+
+        <input class="button1" type="submit" name="register" value="Sign Up">
+        <input class="button1" type="submit" name="login" value="Log In">
+      </form>
+    </div>
+  </body>
+</html>

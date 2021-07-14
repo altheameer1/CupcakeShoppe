@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Althea's Cupcake Shoppe</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="heading">
+
+      <ul id="nav">
+        <li id="title">Althea's Cupcake Shoppe</li>
+        <li class="link" id="first"><a href="index.html">Home</a></li>
+        <li class="link" id="second"><a href="login.html">Log In</a></li>
+        <li class="link" id="second"><a href="products.php">Our Products</a></li>
+        <li class="link" id="second"><a href="search.html">Search</a></li>
+      </ul>
+    </div>
+
+    <div id="content">
+      <br>
+
+      <h2>Please select the quantity you desire of each flavor.</h2>
+
+      <div id="cupcakes">
+        <div id="cupcake1">
+          <img width="281" height="300" src="images/cake1.png">
+          <p>Chocolate with Strawberry Frosting</p>
+          <p>Price: $3.00</p>
+          <p>Quantity</p>
+          <input type="number" name="cake1" id="cake1" value=0>
+          <p>Subtotal:</p>
+          <input type="number" id="sub1" value=0.00 readonly>
+        </div>
+
+        <div id="cupcake2">
+          <img width="281" height="300" src="images/cake2.png">
+          <p>Chocolate with Salted Caramel Frosting</p>
+          <p>Price: $3.50</p>
+          <p>Quantity</p>
+          <input type="number" name="cake2" id="cake2" value=0>
+          <p>Subtotal:</p>
+          <input type="number" id="sub2" value=0.00 readonly>
+        </div>
+
+        <div id="cupcake3">
+          <img width="281" height="300" src="images/cake3.png">
+          <p>Vanilla with Blueberry Frosting</p>
+          <p>Price: $3.00</p>
+          <p>Quantity</p>
+          <input type="number" name="cake3" id="cake3" value=0>
+          <p>Subtotal:</p>
+          <input type="number" id="sub3" value=0.00 readonly>
+        </div>
+      </div>
+
+      <br>
+
+      <p id="grand">Grand Total:</p><input type="number" id="total" value=0 readonly>
+
+      <form>
+        <div class="field">
+          <fieldset>
+            <legend>Delivery Information</legend>
+            <p>Name:</p><input type="text" name="Name" id="name">
+            <p>Email:</p><input type="email" name="Email" id="name">
+            <p>Address:</p><input type="text" name="Address" id="address">
+
+            <p>Please select a devilery method:</p>
+            <select name="Delivery-Method">
+              <option value="home" selected>Home Delivery</option>
+              <option value="store">Store Pick-Up</option>
+            </select>
+
+            <p>Please select a shipping type:</p>
+            <select name="Shipping-Type" id="shipping">
+              <option value="standard" selected>Standard ($2.00)</option>
+              <option value="two">Two-Day ($3.50)</option>
+              <option value="one">Same-Day ($5.00)</option>
+              <option value="none">None (Store Pick-Up)</option>
+            </select>
+          </fieldset>
+        </div>
+
+        <div class="field">
+          <fieldset class="field2">
+            <legend>Payment Information</legend>
+            <input type="radio" name="Card-Type" value="mastercard" checked>Mastercard<br>
+            <input type="radio" name="Card-Type" value="amex">American Express<br>
+            <input type="radio" name="Card-Type" value="visa">Visa<br>
+
+            <p>Card Number:</p><input type="number" name="Card-Number" id="card">
+            <p>Exp Date:</p><input type="date" name="Exp-Date" id="exp">
+          </fieldset>
+
+          <input type="submit" value="Checkout" name="submit" class="button1">
+          <input type="reset" value="Reset" name="cancel" class="button1">
+        </div>
+      </form>
+
+      <p id="receipt"></p>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>
